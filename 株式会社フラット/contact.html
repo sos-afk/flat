@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="株式会社フラットへのお問い合わせページです。お見積り依頼や一般的なお問い合わせ、採用に関するお問い合わせを受け付けています。福岡県を中心に足場工事を提供する株式会社フラットへのお問い合わせはこちらから。">
+  <title>お問い合わせ | 株式会社フラット</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body class="page-contact">
+  <!-- ヘッダー -->
+  <header>
+    <div class="container header-container">
+      <a href="index.html" class="logo">
+        <img src="images/logo.svg" alt="株式会社フラット" width="180" height="50">
+      </a>
+      
+      <div class="header-right">
+        <div class="contact-info">
+          <a href="tel:0928345315" class="phone-link">
+            <i class="fas fa-phone"></i> 092-834-5315
+          </a>
+          <p class="business-hours">平日 9:00〜18:00</p>
+        </div>
+        
+        <nav>
+          <ul class="nav-menu">
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="company.html">会社案内</a></li>
+            <li><a href="service.html">事業内容</a></li>
+            <li><a href="contact.html" class="active">お問い合わせ</a></li>
+          </ul>
+        </nav>
+        
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ページヘッダー -->
+  <div class="page-header">
+    <div class="container">
+      <h1>お問い合わせ</h1>
+      <p>お見積り・ご相談はこちらからお気軽にご連絡ください</p>
+    </div>
+  </div>
+
+  <!-- パンくずリスト -->
+  <div class="breadcrumb">
+    <div class="container">
+      <ul>
+        <li><a href="index.html">ホーム</a></li>
+        <li>お問い合わせ</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- メインコンテンツ -->
+  <main>
+    <!-- 連絡方法セクション -->
+    <section class="contact-methods-section">
+      <div class="container">
+        <div class="contact-methods">
+          <div class="contact-method-card scroll-animation">
+            <div class="contact-method-icon">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <div class="contact-method-content">
+              <h2>お電話でのお問い合わせ</h2>
+              <p>お急ぎの方はお電話でお問い合わせください。</p>
+              <a href="tel:0928345315" class="contact-method-link">092-834-5315</a>
+              <p class="contact-note">受付時間：平日 9:00〜18:00</p>
+            </div>
+          </div>
+          
+          <div class="contact-method-card scroll-animation" data-delay="200">
+            <div class="contact-method-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-method-content">
+              <h2>フォームでのお問い合わせ</h2>
+              <p>24時間受付しております。下記フォームからお問い合わせください。</p>
+              <a href="#contact-form" class="contact-method-link">お問い合わせフォーム</a>
+              <p class="contact-note">土日祝日のお問い合わせは翌営業日以降の対応となります。</p>
+            </div>
+          </div>
+          
+          <div class="contact-method-card scroll-animation" data-delay="400">
+            <div class="contact-method-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-method-content">
+              <h2>営業所での対応</h2>
+              <p>直接ご来社いただく場合は、事前にご連絡ください。</p>
+              <a href="company.html#office" class="contact-method-link">営業所情報を見る</a>
+              <p class="contact-note">突然のご来社の場合、対応できない場合があります。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- お問い合わせフォームセクション -->
+    <section id="contact-form" class="form-section bg-light">
+      <div class="container">
+        <h2 class="section-title">お問い合わせフォーム</h2>
+        <p class="section-subtitle">下記フォームに必要事項をご入力ください</p>
+        
+        <div class="form-tabs">
+          <button class="form-tab-btn active" data-tab="general">一般お問い合わせ</button>
+          <button id="estimate-tab" class="form-tab-btn" data-tab="estimate">お見積り依頼</button>
+          <button class="form-tab-btn" data-tab="recruit">採用に関するお問い合わせ</button>
+        </div>
+        
+        <!-- 一般お問い合わせフォーム -->
+        <div class="tab-content active" data-content="general">
+          <form id="generalContactForm" class="contact-form scroll-animation">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">お名前<span class="required">*</span></label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="company">会社名</label>
+                <input type="text" id="company" name="company">
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">メールアドレス<span class="required">*</span></label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="phone">電話番号<span class="required">*</span></label>
+                <input type="tel" id="phone" name="phone" required>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="inquiry_type">お問い合わせ種類<span class="required">*</span></label>
+              <select id="inquiry_type" name="inquiry_type" required>
+                <option value="">選択してください</option>
+                <option value="サービスについて">サービスについて</option>
+                <option value="料金について">料金について</option>
+                <option value="会社について">会社について</option>
+                <option value="その他">その他</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">お問い合わせ内容<span class="required">*</span></label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            
+            <div class="form-group privacy-policy">
+              <label class="checkbox-container">
+                <input type="checkbox" id="privacy_agree" name="privacy_agree" required>
+                <span class="checkmark"></span>
+                <span class="privacy-text"><a href="#" target="_blank">プライバシーポリシー</a>に同意する</span>
+              </label>
+            </div>
+            
+            <div class="form-button">
+              <button type="submit" class="btn btn-primary btn-large">送信する</button>
+            </div>
+          </form>
+        </div>
+        
+        <!-- お見積り依頼フォーム -->
+        <div class="tab-content" data-content="estimate">
+          <form id="estimateForm" class="contact-form scroll-animation">
+            <div class="form-step active" data-step="1">
+              <h3 class="form-step-title">基本情報</h3>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="est_name">お名前<span class="required">*</span></label>
+                  <input type="text" id="est_name" name="est_name" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="est_company">会社名</label>
+                  <input type="text" id="est_company" name="est_company">
+                </div>
+              </div>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="est_email">メールアドレス<span class="required">*</span></label>
+                  <input type="email" id="est_email" name="est_email" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="est_phone">電話番号<span class="required">*</span></label>
+                  <input type="tel" id="est_phone" name="est_phone" required>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="contact_preference">希望連絡方法<span class="required">*</span></label>
+                <div class="radio-group">
+                  <label class="radio-container">
+                    <input type="radio" name="contact_preference" value="電話" required>
+                    <span class="radio-checkmark"></span>
+                    電話
+                  </label>
+                  <label class="radio-container">
+                    <input type="radio" name="contact_preference" value="メール" required>
+                    <span class="radio-checkmark"></span>
+                    メール
+                  </label>
+                  <label class="radio-container">
+                    <input type="radio" name="contact_preference" value="どちらでも可" required checked>
+                    <span class="radio-checkmark"></span>
+                    どちらでも可
+                  </label>
+                </div>
+              </div>
+              
+              <div class="form-buttons">
+                <button type="button" class="btn btn-primary next-step">次へ進む</button>
+              </div>
+            </div>
+            
+            <div class="form-step" data-step="2">
+              <h3 class="form-step-title">案件情報</h3>
+              
+              <div class="form-group">
+                <label for="project_type">工事種類<span class="required">*</span></label>
+                <select id="project_type" name="project_type" required>
+                  <option value="">選択してください</option>
+                  <option value="住宅工事">住宅工事</option>
+                  <option value="ビル工事">ビル工事</option>
+                  <option value="特殊工事">特殊工事</option>
+                </select>
+              </div>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="building_floors">建物の階数<span class="required">*</span></label>
+                  <select id="building_floors" name="building_floors" required>
+                    <option value="">選択してください</option>
+                    <option value="1階">1階</option>
+                    <option value="2階">2階</option>
+                    <option value="3階">3階</option>
+                    <option value="4〜5階">4〜5階</option>
+                    <option value="6〜10階">6〜10階</option>
+                    <option value="11階以上">11階以上</option>
+                  </select>
+                </div>
+                
+                <div class="form-group">
+                  <label for="building_type">建物の種類</label>
+                  <select id="building_type" name="building_type">
+                    <option value="">選択してください</option>
+                    <option value="木造">木造</option>
+                    <option value="鉄骨造">鉄骨造</option>
+                    <option value="RC造">RC造</option>
+                    <option value="その他">その他</option>
+                  </select>
+                </div>
+              </div>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="postal_code">郵便番号</label>
+                  <input type="text" id="postal_code" name="postal_code" placeholder="例：810-0001">
+                </div>
+                
+                <div class="form-group">
+                  <label for="prefecture">都道府県<span class="required">*</span></label>
+                  <select id="prefecture" name="prefecture" required>
+                    <option value="">選択してください</option>
+                    <option value="福岡県">福岡県</option>
+                    <option value="佐賀県">佐賀県</option>
+                    <option value="長崎県">長崎県</option>
+                    <option value="熊本県">熊本県</option>
+                    <option value="大分県">大分県</option>
+                    <option value="宮崎県">宮崎県</option>
+                    <option value="鹿児島県">鹿児島県</option>
+                    <option value="その他">その他</option>
+                  </select>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="address">現場住所<span class="required">*</span></label>
+                <input type="text" id="address" name="address" required placeholder="市区町村から入力">
+              </div>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="preferred_period">希望工期</label>
+                  <input type="text" id="preferred_period" name="preferred_period" placeholder="例：7月上旬頃（未定でも可）">
+                </div>
+                
+                <div class="form-group">
+                  <label for="budget">予算感</label>
+                  <select id="budget" name="budget">
+                    <option value="">選択してください</option>
+                    <option value="10万円未満">10万円未満</option>
+                    <option value="10〜30万円">10〜30万円</option>
+                    <option value="30〜50万円">30〜50万円</option>
+                    <option value="50〜100万円">50〜100万円</option>
+                    <option value="100万円以上">100万円以上</option>
+                    <option value="未定">未定</option>
+                  </select>
+                </div>
+              </div>
+              
+              <!-- 動的に追加される工事種類別のフィールド -->
+              <div id="dynamicFields"></div>
+              
+              <div class="form-group">
+                <label for="notes">その他特記事項</label>
+                <textarea id="notes" name="notes" rows="3" placeholder="その他ご要望や質問などあればご記入ください"></textarea>
+              </div>
+              
+              <div class="form-buttons">
+                <button type="button" class="btn btn-outline prev-step">戻る</button>
+                <button type="button" class="btn btn-primary next-step">次へ進む</button>
+              </div>
+            </div>
+            
+            <div class="form-step" data-step="3">
+              <h3 class="form-step-title">確認画面</h3>
+              <p>入力内容をご確認ください。問題なければ「送信する」ボタンを押してください。</p>
+              
+              <div class="confirm-content">
+                <div class="confirm-group">
+                  <h4>基本情報</h4>
+                  <dl class="confirm-list">
+                    <dt>お名前</dt>
+                    <dd id="confirm_name">-</dd>
+                    <dt>会社名</dt>
+                    <dd id="confirm_company">-</dd>
+                    <dt>メールアドレス</dt>
+                    <dd id="confirm_email">-</dd>
+                    <dt>電話番号</dt>
+                    <dd id="confirm_phone">-</dd>
+                    <dt>希望連絡方法</dt>
+                    <dd id="confirm_contact_preference">-</dd>
+                  </dl>
+                </div>
+                
+                <div class="confirm-group">
+                  <h4>案件情報</h4>
+                  <dl class="confirm-list">
+                    <dt>工事種類</dt>
+                    <dd id="confirm_project_type">-</dd>
+                    <dt>建物の階数</dt>
+                    <dd id="confirm_building_floors">-</dd>
+                    <dt>建物の種類</dt>
+                    <dd id="confirm_building_type">-</dd>
+                    <dt>現場住所</dt>
+                    <dd id="confirm_address">-</dd>
+                    <dt>希望工期</dt>
+                    <dd id="confirm_preferred_period">-</dd>
+                    <dt>予算感</dt>
+                    <dd id="confirm_budget">-</dd>
+                    <dt>特記事項</dt>
+                    <dd id="confirm_notes">-</dd>
+                  </dl>
+                </div>
+              </div>
+              
+              <div class="form-group privacy-policy">
+                <label class="checkbox-container">
+                  <input type="checkbox" id="est_privacy_agree" name="privacy_agree" required>
+                  <span class="checkmark"></span>
+                  <span class="privacy-text"><a href="#" target="_blank">プライバシーポリシー</a>に同意する</span>
+                </label>
+              </div>
+              
+              <div class="form-buttons">
+                <button type="button" class="btn btn-outline prev-step">戻る</button>
+                <button type="submit" class="btn btn-primary btn-large">送信する</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        
+        <!-- 採用に関するお問い合わせフォーム -->
+        <div class="tab-content" data-content="recruit">
+          <form id="recruitForm" class="contact-form scroll-animation">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="recruit_name">お名前<span class="required">*</span></label>
+                <input type="text" id="recruit_name" name="recruit_name" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="recruit_age">年齢<span class="required">*</span></label>
+                <input type="number" id="recruit_age" name="recruit_age" min="18" max="65" required>
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="recruit_email">メールアドレス<span class="required">*</span></label>
+                <input type="email" id="recruit_email" name="recruit_email" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="recruit_phone">電話番号<span class="required">*</span></label>
+                <input type="tel" id="recruit_phone" name="recruit_phone" required>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="current_occupation">現在の職業<span class="required">*</span></label>
+              <select id="current_occupation" name="current_occupation" required>
+                <option value="">選択してください</option>
+                <option value="学生">学生</option>
+                <option value="会社員">会社員</option>
+                <option value="自営業">自営業</option>
+                <option value="フリーランス">フリーランス</option>
+                <option value="無職">無職</option>
+                <option value="その他">その他</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label>足場工事の経験<span class="required">*</span></label>
+              <div class="radio-group">
+                <label class="radio-container">
+                  <input type="radio" name="experience" value="あり" required>
+                  <span class="radio-checkmark"></span>
+                  あり
+                </label>
+                <label class="radio-container">
+                  <input type="radio" name="experience" value="なし" required checked>
+                  <span class="radio-checkmark"></span>
+                  なし
+                </label>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="experience_years">経験年数（経験ありの場合）</label>
+              <select id="experience_years" name="experience_years">
+                <option value="">選択してください</option>
+                <option value="1年未満">1年未満</option>
+                <option value="1〜3年">1〜3年</option>
+                <option value="3〜5年">3〜5年</option>
+                <option value="5〜10年">5〜10年</option>
+                <option value="10年以上">10年以上</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="qualification">保有資格（複数選択可）</label>
+              <div class="checkbox-group">
+                <label class="checkbox-container">
+                  <input type="checkbox" name="qualification[]" value="足場の組立て等作業主任者">
+                  <span class="checkmark"></span>
+                  足場の組立て等作業主任者
+                </label>
+                <label class="checkbox-container">
+                  <input type="checkbox" name="qualification[]" value="玉掛け技能講習">
+                  <span class="checkmark"></span>
+                  玉掛け技能講習
+                </label>
+                <label class="checkbox-container">
+                  <input type="checkbox" name="qualification[]" value="高所作業車運転技能講習">
+                  <span class="checkmark"></span>
+                  高所作業車運転技能講習
+                </label>
+                <label class="checkbox-container">
+                  <input type="checkbox" name="qualification[]" value="フルハーネス特別教育">
+                  <span class="checkmark"></span>
+                  フルハーネス特別教育
+                </label>
+                <label class="checkbox-container">
+                  <input type="checkbox" name="qualification[]" value="その他">
+                  <span class="checkmark"></span>
+                  その他
+                </label>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="preferred_office">希望勤務地<span class="required">*</span></label>
+              <select id="preferred_office" name="preferred_office" required>
+                <option value="">選択してください</option>
+                <option value="本社">本社（福岡市西区）</option>
+                <option value="福岡南営業所">福岡南営業所（三井郡大刀洗町）</option>
+                <option value="福岡東営業所">福岡東営業所（田川市）</option>
+                <option value="唐津営業所">唐津営業所（唐津市）</option>
+                <option value="どこでも可">どこでも可</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">志望動機・自己PR</label>
+              <textarea id="recruit_message" name="recruit_message" rows="5" placeholder="当社を志望する理由や自己PRをご記入ください"></textarea>
+            </div>
+            
+            <div class="form-group privacy-policy">
+              <label class="checkbox-container">
+                <input type="checkbox" id="recruit_privacy_agree" name="privacy_agree" required>
+                <span class="checkmark"></span>
+                <span class="privacy-text"><a href="#" target="_blank">プライバシーポリシー</a>に同意する</span>
+              </label>
+            </div>
+            
+            <div class="form-button">
+              <button type="submit" class="btn btn-primary btn-large">送信する</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- よくある質問セクション -->
+    <section class="faq-section">
+      <div class="container">
+        <h2 class="section-title">よくある質問</h2>
+        <p class="section-subtitle">お問い合わせの前にご確認ください</p>
+        
+        <div class="faq-list scroll-animation">
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>足場工事にはどのくらいの期間がかかりますか？</h3>
+              <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+            </div>
+            <div class="faq-answer">
+              <p>工事の規模や建物の形状によって異なりますが、一般的な住宅の場合は、足場の組立に1〜2日、解体に1日程度かかります。大型のビルや複雑な形状の建物の場合は、それ以上の期間が必要となることがあります。詳しくはお見積り時にご説明いたします。</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>見積もりは無料ですか？</h3>
+              <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+            </div>
+            <div class="faq-answer">
+              <p>はい、お見積りは無料で承っております。お電話またはWebフォームからお気軽にご依頼ください。お客様のご要望に合わせた最適なプランをご提案いたします。</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>対応エリアはどこまでですか？</h3>
+              <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+            </div>
+            <div class="faq-answer">
+              <p>主に福岡県全域と佐賀県の一部地域を対応エリアとしております。具体的には福岡市、北九州市、久留米市、飯塚市、田川市、唐津市などに対応しています。その他の地域についてもご相談ください。</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>くさび緊結式足場とクサビ足場の違いは何ですか？</h3>
+              <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+            </div>
+            <div class="faq-answer">
+              <p>「くさび緊結式足場」と「クサビ足場」は基本的に同じものを指します。正式名称は「くさび緊結式足場」ですが、現場では略して「クサビ足場」と呼ばれることもあります。ハンマー1本で組立・解体ができる、広い踏板で作業効率が上がるといった特徴を持っています。</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <div class="faq-question">
+              <h3>未経験でも採用していただけますか？</h3>
+              <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+            </div>
+            <div class="faq-answer">
+              <p>はい、未経験者の方も積極的に採用しています。入社後は先輩社員がしっかりと指導し、段階的に技術を身につけていただけるよう研修制度も整えています。年齢や経験に関わらず、やる気のある方のご応募をお待ちしています。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- お問い合わせバナーセクション -->
+    <section class="contact-banner bg-accent">
+      <div class="container">
+        <div class="banner-content">
+          <h2>お電話でのお問い合わせも受け付けています</h2>
+          <p>現場調査や工事のご相談など、お気軽にお電話ください</p>
+          <a href="tel:0928345315" class="banner-phone">
+            <i class="fas fa-phone"></i> 092-834-5315
+          </a>
+          <p class="banner-hours">受付時間：平日 9:00〜18:00</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- フッター -->
+  <footer>
+    <div class="footer-main">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-info">
+            <div class="footer-logo">
+              <img src="images/logo.svg" alt="株式会社フラット" width="160" height="44">
+            </div>
+            <div class="footer-address">
+              <p>〒819-0383<br>福岡県福岡市西区田尻東1丁目14-3</p>
+            </div>
+            <div class="footer-phone">
+              <i class="fas fa-phone"></i> 092-834-5315
+            </div>
+            <p>平日 9:00〜18:00</p>
+          </div>
+          
+          <div class="footer-links">
+            <div class="footer-link-group">
+              <h3>サイトマップ</h3>
+              <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="company.html">会社案内</a></li>
+                <li><a href="service.html">事業内容</a></li>
+                <li><a href="contact.html">お問い合わせ</a></li>
+              </ul>
+            </div>
+            
+            <div class="footer-link-group">
+              <h3>事業内容</h3>
+              <ul>
+                <li><a href="service.html#scaffold">くさび緊結式足場</a></li>
+                <li><a href="service.html#residential">住宅工事用足場</a></li>
+                <li><a href="service.html#commercial">ビル工事用足場</a></li>
+                <li><a href="service.html#projects">施工事例</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="footer-social">
+            <h3>ソーシャルメディア</h3>
+            <p>株式会社フラットの最新情報やスタッフの日常をお届けします</p>
+            <div class="social-icons">
+              <a href="https://instagram.com/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="https://twitter.com/" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="https://facebook.com/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            </div>
+            <div class="instagram-grid">
+              <a href="https://instagram.com/" target="_blank" class="instagram-item">
+                <img src="images/instagram/post1.jpg" alt="インスタグラム投稿" width="100" height="100">
+              </a>
+              <a href="https://instagram.com/" target="_blank" class="instagram-item">
+                <img src="images/instagram/post2.jpg" alt="インスタグラム投稿" width="100" height="100">
+              </a>
+              <a href="https://instagram.com/" target="_blank" class="instagram-item">
+                <img src="images/instagram/post3.jpg" alt="インスタグラム投稿" width="100" height="100">
+              </a>
+              <a href="https://instagram.com/" target="_blank" class="instagram-item">
+                <img src="images/instagram/post4.jpg" alt="インスタグラム投稿" width="100" height="100">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2025 株式会社フラット All Rights Reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">プライバシーポリシー</a>
+          <a href="#">サイトマップ</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- トップに戻るボタン -->
+  <a href="#" class="scroll-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+  <script src="js/contact-form.js"></script>
+  <script src="js/instagram.js"></script>
+</body>
+</html>

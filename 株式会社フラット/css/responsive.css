@@ -1,0 +1,464 @@
+/* 
+* 株式会社フラット ウェブサイト
+* レスポンシブ対応用スタイルシート
+*/
+
+/* スマートフォン（縦向き）*/
+@media screen and (max-width: 576px) {
+  html {
+    font-size: 14px;
+  }
+
+  .container {
+    width: 95%;
+    padding: 0 10px;
+  }
+
+  section {
+    padding: 60px 0;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .header-container {
+    padding: 10px 0;
+  }
+
+  .logo img {
+    height: 40px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .header-right {
+    justify-content: flex-end;
+  }
+
+  .contact-info {
+    display: none;
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--main-color);
+    padding: 80px 20px;
+    z-index: 1000;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+  }
+
+  nav.active {
+    transform: translateX(0);
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-menu li {
+    margin: 20px 0;
+  }
+
+  .nav-menu a {
+    font-size: 1.2rem;
+  }
+
+  .hero-section {
+    height: 80vh;
+    min-height: 500px;
+    margin-top: 60px;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content .subtitle {
+    font-size: 1rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .page-header {
+    padding: 100px 0 40px;
+  }
+
+  .page-header h1 {
+    font-size: 2rem;
+  }
+
+  .page-header p {
+    font-size: 1rem;
+  }
+
+  .value-card {
+    flex: 0 0 100%;
+  }
+
+  .service-overview {
+    flex-direction: column;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-container {
+    flex-direction: column;
+  }
+
+  .skills-content {
+    order: 2;
+  }
+
+  .skills-image {
+    order: 1;
+  }
+
+  .news-item {
+    flex-direction: column;
+  }
+
+  .news-date {
+    margin-bottom: 10px;
+  }
+
+  .philosophy-main {
+    flex-direction: column;
+  }
+
+  .philosophy-headline h3 {
+    font-size: 1.8rem;
+  }
+
+  .philosophy-meaning {
+    font-size: 1rem;
+  }
+
+  .values-detail {
+    gap: 30px;
+  }
+
+  .value-detail-item {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .company-table th,
+  .company-table td {
+    padding: 15px;
+  }
+
+  .timeline::before {
+    left: 15px;
+  }
+
+  .timeline-item {
+    padding-left: 50px;
+  }
+
+  .timeline-date {
+    position: static;
+    width: auto;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+
+  .timeline-date .year,
+  .timeline-date .month {
+    display: inline;
+    font-size: 1.2rem;
+  }
+
+  .timeline-date .month {
+    margin-left: 5px;
+  }
+
+  .timeline-content::before {
+    left: -44px;
+  }
+
+  .office-tab {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+
+  .office-info {
+    flex-direction: column;
+  }
+
+  .office-map {
+    height: 300px;
+  }
+
+  .feature-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .parts-item {
+    flex-direction: column;
+  }
+
+  .work-type-card {
+    flex-direction: column;
+  }
+
+  .project-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row .form-group {
+    flex: 0 0 100%;
+  }
+
+  .contact-method-card {
+    flex: 0 0 100%;
+  }
+
+  .contact-form {
+    padding: 30px 20px;
+  }
+
+  .form-tab-btn {
+    flex: 1;
+    text-align: center;
+  }
+
+  .step-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .step-buttons button {
+    width: 100%;
+  }
+}
+
+/* スマートフォン（横向き）からタブレット */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 0 15px;
+  }
+
+  .header-right {
+    justify-content: flex-end;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .contact-info {
+    display: none;
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--main-color);
+    padding: 80px 20px;
+    z-index: 1000;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+  }
+
+  nav.active {
+    transform: translateX(0);
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-menu li {
+    margin: 15px 0;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content .subtitle {
+    font-size: 1.2rem;
+  }
+
+  .value-card {
+    flex: 0 0 48%;
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .news-date {
+    width: 100px;
+  }
+
+  .philosophy-main {
+    gap: 30px;
+  }
+
+  .value-detail-item {
+    gap: 20px;
+  }
+
+  .timeline::before {
+    left: 75px;
+  }
+
+  .timeline-item {
+    padding-left: 110px;
+  }
+
+  .timeline-content::before {
+    left: -36px;
+  }
+
+  .feature-cards {
+    gap: 20px;
+  }
+
+  .form-row .form-group {
+    flex: 0 0 100%;
+  }
+
+  .contact-method-card {
+    flex: 0 0 45%;
+  }
+}
+
+/* タブレットからノートPC */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    width: 90%;
+  }
+
+  .contact-info {
+    margin-right: 20px;
+  }
+
+  .nav-menu li {
+    margin-left: 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+
+  .value-card {
+    flex: 0 0 31%;
+    padding: 25px;
+  }
+
+  .feature-list li {
+    margin-bottom: 15px;
+  }
+
+  .footer-content {
+    gap: 30px;
+  }
+
+  .footer-link-group {
+    flex: 0 0 180px;
+  }
+}
+
+/* デスクトップ */
+@media screen and (min-width: 1025px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+/* 大画面デスクトップ */
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1280px;
+  }
+
+  .hero-section {
+    max-height: 900px;
+  }
+
+  .hero-content h1 {
+    font-size: 4rem;
+  }
+
+  .hero-content .subtitle {
+    font-size: 1.8rem;
+  }
+}
+
+/* 印刷用スタイル */
+@media print {
+  header {
+    position: static;
+    box-shadow: none;
+    background-color: transparent;
+  }
+
+  .hero-section,
+  .contact-buttons,
+  .footer-social,
+  .hamburger,
+  .scroll-to-top {
+    display: none;
+  }
+
+  body,
+  section,
+  footer {
+    background-color: white !important;
+    color: black !important;
+  }
+
+  .bg-accent {
+    background-color: white !important;
+    color: black !important;
+  }
+
+  .skills-content h2::after {
+    background-color: black;
+  }
+
+  .page-header {
+    background-color: white;
+    color: black;
+    padding: 20px 0;
+  }
+
+  a {
+    color: black;
+    text-decoration: none;
+  }
+
+  .footer-main {
+    padding: 20px 0;
+  }
+
+  .footer-link-group h3::after,
+  .footer-social h3::after {
+    background-color: black;
+  }
+
+  .footer-link-group ul li a {
+    color: black;
+  }
+}
